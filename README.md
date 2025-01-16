@@ -25,3 +25,31 @@ This is a real-time chat application built using Django and Django Channels for 
    ```bash
    git clone https://github.com/your-username/django-chat-app.git
    cd django-chat-app
+
+
+## Install dependencies:
+
+pip install -r requirements.txt
+
+## Set up Redis (If using Redis): Make sure you have Redis installed and running locally:
+
+brew install redis
+redis-server
+
+
+## Apply migrations:
+
+python manage.py migrate
+
+## Create a superuser for accessing the Django Admin:
+
+python manage.py createsuperuser
+
+## Start the development server:
+
+python manage.py runserver
+
+## Access the application at
+
+http://127.0.0.1:8000/
+
